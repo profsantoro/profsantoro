@@ -1,0 +1,64 @@
+html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagina con sfondo colorato e paragrafi</title>
+  <style>
+    body {
+      background-color: #f0f4ff;
+    }
+
+    .paragrafo {
+      background-color: #ffffff;   /* sfondo del box paragrafo */
+      color: #333366;              /* colore del testo */
+      border: 1px solid #ccd4ff;
+      padding: 15px;
+      margin-bottom: 20px;
+      overflow: auto;              /* per contenere il float */
+    }
+
+    .paragrafo img {
+      float: left;                 /* immagine a sinistra del testo */
+      margin-right: 15px;
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #223399;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Esempio di pagina colorata</h1>
+
+  <div class="paragrafo">
+    <img src="https://www.gedistatic.it/content/gnn/img/lastampa/2023/12/13/132632897-db860dd2-18c6-4ae3-8a58-20a5d5e824dc.jpg" alt="Foto 1">
+    <p>
+      Questo è il primo paragrafo con un testo di esempio. L’immagine è allineata a sinistra
+      grazie alla proprietà <code>float: left;</code>, mentre il testo scorre accanto.
+    </p>
+  </div>
+
+  <div class="paragrafo">
+    <img src="foto2.jpg" alt="Foto 2">
+    <p>
+      Secondo paragrafo: puoi cambiare il colore di sfondo del box, il colore del testo
+      e le dimensioni dell’immagine modificando le regole CSS nella sezione <code>&lt;style&gt;</code>.
+    </p>
+  </div>
+
+  <div class="paragrafo">
+    <img src="foto3.jpg" alt="Foto 3">
+    <p>
+      Terzo paragrafo: sostituisci <code>foto1.jpg</code>, <code>foto2.jpg</code> e <code>foto3.jpg</code>
+      con i percorsi reali delle tue immagini. Puoi anche usare immagini online con URL completi.
+    </p>
+  </div>
+
+</body>
+</html>
